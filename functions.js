@@ -125,30 +125,39 @@ const isOdd = (num) => num % 2 !== 0;
 
 // console.log(isOdd(2));
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! determines if the number is negative
-// //! outputs true if the number is negative
-// //! outputs false if the number is zero or positive
-// // ex: isNegative(-1); -> true
-// // ex: isNegative(1); -> false
-// // ex: isNegative(0); -> false
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* determines if the number is negative
+//* outputs true if the number is negative
+//* outputs false if the number is zero or positive
+// ex: isNegative(-1); -> true
+// ex: isNegative(1); -> false
+// ex: isNegative(0); -> false
 // function isNegative(num) {
-
+//     return num < 0;
 // }
-// //*** ES6 ***//
-// // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! returns the absolute value of the inputted number
-// // ex: positive(-1); -> 1
-// // ex: positive(1); -> 1
+//*** ES6 ***//
+const isNegative = (num) => num < 0;
+
+
+// console.log(isNegative(-2));
+// console.log(isNegative(2));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* returns the absolute value of the inputted number
+// ex: positive(-1); -> 1
+// ex: positive(1); -> 1
 // function positive(num) {
-
+//     return Math.abs(num);
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const positive = (num) => Math.abs(num);
+
+// console.log(positive(-10));
+// console.log(positive(10));
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
