@@ -1,4 +1,4 @@
-//! READ: http://learn.ironhack.com/#/learning_unit/8206
+//* READ: http://learn.ironhack.com/#/learning_unit/8206
 
 //***************** EXAMPLE ************ //
 // for(initiation; condition to keep loop; incrementer) {
@@ -7,21 +7,43 @@
 
 
 // ************* PRATICE ************** //
-//! Print numbers 0 to 100
+//* Print numbers 0 to 100
 
-// code here
+const printNumbers0To100 = () => {
+  for (let i = 0; i <= 100; i += 1) {
+    console.log(i);
+  }
+}
+
+// printNumbers0To100();
 
 // ######################################### //
 
-//! Print only even numbers from 0 to 100
+//* Print only even numbers from 0 to 100
 
-// code here
+const printEvenNumbers0To100 = () => {
+  for (let i = 0; i <= 100; i += 1) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+};
+
+// printEvenNumbers0To100();
 
 // ######################################### //
 
-//! Print only odd numbers from 0 to 100
+//* Print only odd numbers from 0 to 100
 
-// code here
+const printOddNumbers0To100 = () => {
+  for (let i = 0; i <= 100; i += 1) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+  }
+}
+
+// printOddNumbers0To100();
 
 // ######################################### //
 
