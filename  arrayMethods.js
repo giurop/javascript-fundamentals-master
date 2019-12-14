@@ -1,18 +1,16 @@
-//! Given the array below, write a function add2 that will receive the array as an argument and will return a new array with all items of the original array added by 2.
+//* Given the array below, write a function add2 that will receive the array as an argument and will return a new array with all items of the original array added by 2.
 
 const arrEx6 = [2, 4, 6, 7, 9, 12];
 
-// code here
+const add2 = (array) => array.map((number) => number + 2);
 
 // ######################################### //
 
-//! Given an array of numbers, write a function checkSum that returns the string 'even' if the sum of all values are even, otherwise return 'odd';
+//* Given an array of numbers, write a function checkSum that returns the string 'even' if the sum of all values are even, otherwise return 'odd';
 
 const arrEx7 = [1, 2, 3];
 
-const checkSum = (arr) => {
-  // code here
-};
+const checkSum = (arr) => arr.reduce((a, b) => a + b) % 2 === 0 ? 'even' : 'odd';
 
 // ######################################### //
 
@@ -36,15 +34,15 @@ const sortLetters = (arr) => {
 
 // ######################################### //
 
-//! Make a function that takes a number and returns that number multiplied by 2.
+//* Make a function that takes a number and returns that number multiplied by 2.
 
-// code here
+const multiplyBy2 = (num) => num * 2;
 
 // ######################################### //
 
-//! Using any array method and the function built in the previous question, make a loop that print the elements of an array multiplied by 2.
+//* Using any array method and the function built in the previous question, make a loop that print the elements of an array multiplied by 2.
 
-// code here
+const arrayBy2 = (arr) => console.log(arr.map((num) => multiplyBy2(num)));
 
 // ######################################### //
 
