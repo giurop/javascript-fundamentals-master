@@ -84,39 +84,46 @@ const multiply = (val1, val2) => val1 * val2;
 
 // console.log(multiply(9, 5));
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! multiplies all three inputted numbers together
-// // ex: multiplyy(1,2,3); -> 6
-// // ex: multiplyy(2,2,3); -> 12
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* multiplies all three inputted numbers together
+// ex: multiplyy(1,2,3); -> 6
+// ex: multiplyy(2,2,3); -> 12
 // function multiplyy(a, b, c) {
-
+//     return a * b * c;
 // }
-// //*** ES6 ***//
-// // write your code here
+//*** ES6 ***//
+const multiplyy = (a, b, c) => a * b * c;
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! returns the square of the inputted number
-// // ex: square(5); -> 25
+// console.log(multiplyy(1, 2, 8));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* returns the square of the inputted number
+// ex: square(5); -> 25
 // function square(value) {
-
+//     return value ** 2;
 // }
-// //*** ES6 ***//
-// // write your code here
+//*** ES6 ***//
+const square = (value) => value ** 2;
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! determines if the number is odd
-// //! outputs true if the number is odd
-// //! outputs false if the number is even
-// // ex: isOdd(4); -> true
-// // ex: isOdd(5); -> false
+// console.log(square(7));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* determines if the number is odd
+//* outputs true if the number is odd
+//* outputs false if the number is even
+// ex: isOdd(4); -> true
+// ex: isOdd(5); -> false
 // function isOdd(num) {
-
+//     return num % 2 !== 0;
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const isOdd = (num) => num % 2 !== 0;
+
+// console.log(isOdd(2));
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
