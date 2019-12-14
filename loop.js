@@ -108,22 +108,58 @@ const printNumbersFrom102To32 = () => {
 }
 
 // printNumbersFrom102To32();
+
 // ######################################### //
 
 
 const pets = ['dog', 'cat', 'bird', 'salamander', 'human', 'ape', 'alien', 'dinossaur'];
-// Use FOR Loop to print the content of array "pets"
+//* Use FOR Loop to print the content of array "pets"
 
+const printPets = (array) => {
+  for (let i = 0; i < pets.length; i += 1) {
+    console.log(pets[i]);
+  }
+}
 
-//! Use FOR EACH to print the content of array "pets"
+// printPets(pets);
+
+//* Use FOR EACH to print the content of array "pets"
+
+const printPetsForEach = (array) => {
+  array.forEach((pet) => console.log(pet));
+}
+
+// printPetsForEach(pets);
 
 
 const array = [1, 'x', 3, 8, 'x', 5, 7, 3, 'x', 2, 6, 'x', 10];
-// Use FOR to count and print how many times the letter x appears in the array
+//* Use FOR to count and print how many times the letter x appears in the array
 
+const countAndPrintLetterX = (array) => {
+  let count = 0;
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === 'x') {
+      count += 1;
+    }
+  }
+  console.log(count);
+}
 
-//! Use FOR EACH to count and print how many times the letter x appears in the array
+// countAndPrintLetterX(array);
 
+//* Use FOR EACH to count and print how many times the letter x appears in the array
+
+const countAndPrintLetterXForEach = (array) => {
+  let count = 0;
+  array.forEach((el) => {
+    if (el === 'x') {
+      count += 1;
+    }
+  });
+  console.log(count);
+}
+
+// countAndPrintLetterXForEach(array);
 
 const numbers = [1, 5, 6, 8, 12, 25, 65, 78];
 //* Use FOR to calculate and print the sum of all numbers in the array
