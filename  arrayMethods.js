@@ -22,13 +22,11 @@ const evenNumbers = (arr) => arr.filter((num) => num % 2 === 0);
 
 // ######################################### //
 
-//! Given an array of letters, write a function sortLetters that returns a new array of letters in alphabetical order.
+//* Given an array of letters, write a function sortLetters that returns a new array of letters in alphabetical order.
 
 const arrEx9 = ['a', 'c', 'g', 'r', 'w', 'e', 's', 'l', 'z', 'q', 'b', 'd'];
 
-const sortLetters = (arr) => {
-  // code here
-};
+const sortLetters = (arr) => arr.sort();
 
 // ######################################### //
 
