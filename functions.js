@@ -10,7 +10,7 @@ function addTwo(number) {
 // OR
 function addTwo1(number) {
     return number + 2;
-    
+
 }
 //*** ES6 ***//
 const addTwo2 = number => {
@@ -29,7 +29,7 @@ const addTwo3 = number => number + 2;
 //     return num1 + num2;
 // }
 //*** ES6 ***//
-const add = (num1,num2) => num1 + num2;
+const add = (num1, num2) => num1 + num2;
 
 // console.log(add(5, 10));
 
@@ -46,37 +46,43 @@ const addd = (value1, value2, value3) => value1 + value2 + value3;
 
 // console.log(addd(2,3,5));
 
-// //--------------------------------------------------------------------------------//
-// //! subtracts the second inputted number from the first inputted number
-// // ex: subtract(5, 10); -> -5
-// //*** ES5 ***//
+//--------------------------------------------------------------------------------//
+//* subtracts the second inputted number from the first inputted number
+// ex: subtract(5, 10); -> -5
+//*** ES5 ***//
 // function subtract(n1, n2) {
-
+//     return n1 - n2;
 // }
-// //*** ES6 ***//
-// const subtract = (n1,n2) =>  // write your code here
+//*** ES6 ***//
+const subtract = (n1, n2) => n1 - n2;
 
-// //--------------------------------------------------------------------------------//
-// //! multiplies the inputted number by 2
-// // ex: multiplyByTwo(5); -> 10
-// // ex: multiplyByTwo(6); -> 12
-// //*** ES5 ***//
+// console.log(subtract(10, 6));
+
+//--------------------------------------------------------------------------------//
+//* multiplies the inputted number by 2
+// ex: multiplyByTwo(5); -> 10
+// ex: multiplyByTwo(6); -> 12
+//*** ES5 ***//
 // function multiplyByTwo(numero) {
-
+//     return numero * 2;
 // }
-// //*** ES6 ***//
-// const multiplyByTwo = numero => // write your code here
+//*** ES6 ***//
+const multiplyByTwo = numero => numero * 2;
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! multplies the two inputted numbers together
-// // ex: multiply(1,2); -> 2
-// // ex: multiply(2,2); -> 4
+// console.log(multiplyByTwo(30));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* multplies the two inputted numbers together
+// ex: multiply(1,2); -> 2
+// ex: multiply(2,2); -> 4
 // function multiply(val1, val2) {
-
+//     return val1 * val2;
 // }
-// //*** ES6 ***//
-// // write your code here
+//*** ES6 ***//
+const multiply = (val1, val2) => val1 * val2;
+
+// console.log(multiply(9, 5));
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
