@@ -175,18 +175,32 @@ const sumAndPrintArray = (arr) => {
 
 // sumAndPrintArray(numbers);
 
-//! Use FOR EACH to calculate and print the sum of all numbers in the array
+//* Use FOR EACH to calculate and print the sum of all numbers in the array
 
+const sumAndPrintArrayForEach = (array) => {
+  let sum = 0;
+  array.forEach((number) => sum += number);
+  console.log(sum);
+  return sum;
+}
+
+// sumAndPrintArrayForEach(numbers);
 
 const sentence = 'Hack your life';
 //* Use FOR to print each letter of the sentence on a different line.
 
-const printLetterNewLine = () => {
-  for (let i = 0; i < sentence.length; i += 1) {
-    console.log(sentence[i]);
+const printLetterNewLine = (str) => {
+  for (let i = 0; i < str.length; i += 1) {
+    console.log(str[i]);
   }
 }
 
-// printLetterNewLine();
+// printLetterNewLine(sentence);
 
-//! Use FOR EACH to print each letter of the sentence on a different line.
+//* Use FOR EACH to print each letter of the sentence on a different line.
+
+const printLetterNewLineForEach = (str) => {
+  [...str].forEach((letter) => console.log(letter));
+}
+
+// printLetterNewLineForEach(sentence);
