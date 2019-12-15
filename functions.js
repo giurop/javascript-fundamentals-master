@@ -226,24 +226,30 @@ const positive = (num) => Math.abs(num);
 // //*** ES6 ***//
 // // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! returns only the max element from the inputted array of numbers
-// // ex: findMax([1,25,6,3]); -> 25
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* returns only the max element from the inputted array of numbers
+// ex: findMax([1,25,6,3]); -> 25
 // function findMax(array) {
-
+//     return Math.max(...array);
 // }
-// //*** ES6 ***//
-// // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! remove leading and trailing whitespace or specified characters from string
-// // trim(' hello '); -> 'hello'
+//*** ES6 ***//
+const findMax = (array) => Math.max(...array);
+
+// console.log(findMax([1, 25, 26, 3]));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* remove leading and trailing whitespace or specified characters from string
+// trim(' hello '); -> 'hello'
 // function trim(string) {
-
+//     return string.replace(/\s/gi,'');
 // }
-// //*** ES6 ***//
-// // write your code here
 
-// //--------------------------------------------------------------------------------//
+//*** ES6 ***//
+const trim = (string) => string.replace(/\s/gi, '');
+
+// console.log(trim('  hello ').length);
+
+//--------------------------------------------------------------------------------//
