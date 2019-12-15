@@ -192,16 +192,20 @@ const positive = (num) => Math.abs(num);
 // //*** ES6 ***//
 // // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! return boolean of whether argument is classified as null
-// // isNull(null); -> true
-// // isNull(5); -> false
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* return boolean of whether argument is classified as null
+// isNull(null); -> true
+// isNull(5); -> false
 // function isNull(value) {
-
+//     return value === null;
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const isNull = (value) => value === null;
+
+// console.log(isNull(null));
+// console.log(isNull(5));
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
@@ -214,17 +218,20 @@ const positive = (num) => Math.abs(num);
 // //*** ES6 ***//
 // // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
 
-// //! this function accepts an array of numbers
-// //! and returns an array of only the even numbers
-// // ex: returnEvent([1,2,3,4,5,6,7]); -> [2,4,6]
+//* this function accepts an array of numbers
+//* and returns an array of only the even numbers
+// ex: returnEvent([1,2,3,4,5,6,7]); -> [2,4,6]
 // function returnEvens(array) {
-
+//     return array.filter((el) => el % 2 === 0);
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const returnEvens = (array) => array.filter((el) => el % 2 === 0);
+
+// console.log(returnEvens([1, 2, 3, 4, 5, 6, 7]));
 
 //--------------------------------------------------------------------------------//
 //*** ES5 ***//
