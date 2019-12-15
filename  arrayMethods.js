@@ -10,7 +10,7 @@ const add2 = (array) => array.map((number) => number + 2);
 
 const arrEx7 = [1, 2, 3];
 
-const checkSum = (arr) => arr.reduce((a, b) => a + b) % 2 === 0 ? 'even' : 'odd';
+const checkSum = (arr) => arr.reduce((acc, value) => acc + value, 0) % 2 === 0 ? 'even' : 'odd';
 
 // ######################################### //
 
