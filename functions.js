@@ -180,26 +180,31 @@ const isNumber = (value) => typeof value === 'number';
 // isArray(5); → false
 // isArray([1,2,3]); → true
 // function isArray(value) {
-//     return typeof value === 'object';
+    // return value.constructor === Array;
 // }
 
 //*** ES6 ***//
-const isArray = (value) => typeof value === 'object';
+const isArray = (value) => value.constructor === Array;
 
 // console.log(isArray(5));
 // console.log(isArray([1,2,3]));
 // console.log(typeof [1,2,3]);
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! Returns boolean of whether argument is classified as an Object
-// // isObject(5); → false
-// // isObject([1,2,3]); → false
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* Returns boolean of whether argument is classified as an Object
+// isObject(5); → false
+// isObject([1,2,3]); → false
 // function isObject(value) {
-
+//     return value.constructor === Object;
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const isObject = (value) => value.constructor === Object;
+
+// console.log(isObject(5));
+// console.log(isObject([1, 2, 3]));
+// console.log(isObject({x: [1, 2, 3], y: 2, z: 3}));
 
 //--------------------------------------------------------------------------------//
 //*** ES5 ***//
@@ -216,16 +221,19 @@ const isNull = (value) => value === null;
 // console.log(isNull(null));
 // console.log(isNull(5));
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! this function accepts an array of numbers
-// //! and returns an array of only the odd numbers
-// // ex: returnOdds([1,2,3,4,5,6,7]); -> [1,3,5,7]
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* this function accepts an array of numbers
+//* and returns an array of only the odd numbers
+// ex: returnOdds([1,2,3,4,5,6,7]); -> [1,3,5,7]
 // function returnOdds(array) {
-
+//     return array.filter((el) => el % 2 !== 0);
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const returnOdds = (array) => array.filter((el) => el % 2 !== 0);
+
+// console.log(returnOdds([1,2,3,4,5,6,7]));
 
 //--------------------------------------------------------------------------------//
 //*** ES5 ***//
