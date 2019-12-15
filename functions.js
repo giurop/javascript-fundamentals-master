@@ -161,25 +161,34 @@ const positive = (num) => Math.abs(num);
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
-// //! Returns boolean of whether argument is classified as a Number object
-// // isNumber(5); → true
-// // isNumber('hi'); → false
+//* Returns boolean of whether argument is classified as a Number object
+// isNumber(5); → true
+// isNumber('hi'); → false
 // function isNumber(value) {
-
+//     return typeof value === 'number';
 // }
-// //*** ES6 ***//
-// // write your code here
 
-// //--------------------------------------------------------------------------------//
-// //*** ES5 ***//
-// //! Returns boolean of whether argument is classified as an Array object
-// // isArray(5); → false
-// // isArray([1,2,3]); → true
+//*** ES6 ***//
+const isNumber = (value) => typeof value === 'number';
+
+// console.log(isNumber(5));
+// console.log(isNumber('hi'));
+
+//--------------------------------------------------------------------------------//
+//*** ES5 ***//
+//* Returns boolean of whether argument is classified as an Array object
+// isArray(5); → false
+// isArray([1,2,3]); → true
 // function isArray(value) {
-
+//     return typeof value === 'object';
 // }
-// //*** ES6 ***//
-// // write your code here
+
+//*** ES6 ***//
+const isArray = (value) => typeof value === 'object';
+
+// console.log(isArray(5));
+// console.log(isArray([1,2,3]));
+// console.log(typeof [1,2,3]);
 
 // //--------------------------------------------------------------------------------//
 // //*** ES5 ***//
